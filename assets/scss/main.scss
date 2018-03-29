@@ -1,0 +1,169 @@
+@import "mixins";
+
+body {
+    font-family: Open Sans, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+}
+
+nav {
+    background: #fff;
+    border-bottom: 2px solid #d6d6d6 !important;
+    .navbar-header {
+        cursor: pointer;
+    }
+    .navbar-brand {
+        color: #0072ff;
+        text-transform: uppercase;
+    }
+}
+
+#view {
+    height: 100vh;
+    width: 100vw;
+    @include gradient-horizontal($start-color: #00c6ff, $end-color: #0072ff, $start-percent: 0%, $end-percent: 100%);
+    color: #000 !important;
+    text-align: center;
+    padding: 15px 0 0 0;
+    margin: 0 0 0 0;
+    display: block;
+    position:absolute;
+    top: 0;
+    left:0;
+    overflow: scroll;
+}
+
+#article, #SAM {
+    width: 90%;
+    margin: 15px auto;
+    height: auto;
+    overflow: auto;
+    .intro {
+        width: 100%;
+        margin: 15px auto;
+        h1 {
+            color: coral;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 1.5em;
+        }
+    }
+    .table_search {
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
+    }
+    .table_header {
+        h4 {
+            font-size: 1.25em;
+        }
+        span {
+            font-size: 1.15em;
+        }
+        h4,span {
+            color: navy;
+            text-align: left;
+            float: left;
+            margin: 10px 15px;
+            vertical-align: bottom;
+        }
+    }
+}
+
+#fico {
+    display: block;
+}
+
+#geo {
+    display: none;
+}
+
+#controls {
+    width: 100%;
+    position:relative;
+    display: block;
+    text-align: center;
+    margin: 0 auto 15px;
+}
+
+.dv01charts {
+    margin-bottom: 15px;
+}
+
+.dataTables_length {
+    float: left;
+}
+
+.dataTables_filter {
+    float: right;
+}
+
+.dataTables_paginate {
+    float: right;
+}
+.dataTables_info {
+    float: left;
+}
+
+
+#SAM {
+    display: none;
+    form {
+        height: 150px;
+    }
+    .toggle.checkbox {
+        float: left;
+        margin-right: 15px;
+    }
+    #generate {
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
+    }
+}
+
+
+#ABTesting {
+    display:none;
+    .ab {
+        margin: 15px auto;
+        text-align: left;
+        .perc {
+            text-align: center;
+            margin: 30px auto;
+            font-size: 1em;
+            color: #000;
+            span {
+                font-size: 3em;
+            }
+        }
+        .ASpan {
+            color: green;
+        }
+        .BSpan {
+            color: crimson;
+        }
+        .horizontal.label {
+            margin: 0 .5em 0 .5em !important;
+        }
+        .EX {
+            p, h4 {
+                margin-bottom: 0 !important;
+                margin-top: 15px !important;
+            }
+        }
+        .list {
+            .item {
+                margin: 15px auto !important;
+            }
+        }
+    }
+
+}
+
+
+
+
+
