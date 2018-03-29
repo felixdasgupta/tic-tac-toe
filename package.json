@@ -1,7 +1,7 @@
 {
-  "name": "dataviz",
+  "name": "SAM AI",
   "version": "1.0.0",
-  "description": "Data Visualization Concept",
+  "description": "SAM",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -43,15 +43,15 @@
     "wiredep": "^4.0.0"
   },
   "engines": {
-    "node": "6.11.0",
-    "npm": "4.1.2"
+    "node": "9.7.1",
+    "npm": "5.7.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/felixdasgupta/sfyd.git"
+    "url": "git+https://github.com/felixdasgupta/sam-ai.git"
   },
   "bugs": {
-    "url": "https://github.com/felixdasgupta/sfyd/issues"
+    "url": "https://github.com/felixdasgupta/sam-ai/issues"
   },
-  "homepage": "https://github.com/felixdasgupta/sfyd#readme"
+  "homepage": "https://github.com/felixdasgupta/sam-ai#readme"
 }
