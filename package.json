@@ -1,5 +1,5 @@
 {
-  "name": "SAM AI",
+  "name": "sam-ai",
   "version": "1.0.0",
   "description": "SAM",
   "main": "server.js",
