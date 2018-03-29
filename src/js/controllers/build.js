@@ -17,7 +17,7 @@ let DV01 = {
     extractData: function(csv_path, name, tableLocation, tableID, primary, values){
       let processdata = this.processTableData;
       d3.csv(csv_path, function(dataJSON) {
-        console.log(dataJSON);
+        //console.log(dataJSON);
         let _table = new DVO1_X(tableID, dataJSON, name, processdata);
         _table.drawTable(tableStr1, tableLocation);
         DV01.buildCharts(dataJSON);
@@ -55,7 +55,7 @@ let DV01 = {
       xsA = ["xA"],
       xsB = ["xB"];
       _.each(dataJSON, (o) => {
-        console.log(o.user_type);
+        //console.log(o.user_type);
         if (o.user_type == 2) {
           groupA.push(o.sentiment);
           xsA.push(o.confidence);
@@ -65,7 +65,7 @@ let DV01 = {
         }
       });
       let columns = [groupA, xsA, groupB, xsB];
-      console.log(columns);
+      //console.log(columns);
       return columns
     },
     drawBars: function(loc, data){
@@ -114,7 +114,7 @@ let DV01 = {
       groupB = ['B', 1217];
 
       let data = [groupA,groupB]
-      console.log(data)
+      //console.log(data)
       return data;
     },
     drawPieA: function(loc, data){
