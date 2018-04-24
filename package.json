@@ -1,7 +1,7 @@
 {
-  "name": "sam-ai",
+  "name": "tic-tac-toe",
   "version": "1.0.0",
-  "description": "SAM",
+  "description": "Tic Tac Toe",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -40,6 +40,7 @@
   "dependencies": {
     "del": "^2.2.2",
     "node-static": "^0.7.9",
+    "npm": "^6.0.0",
     "wiredep": "^4.0.0"
   },
   "engines": {
@@ -48,10 +49,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/felixdasgupta/sam-ai.git"
+    "url": "git+https://github.com/felixdasgupta/tic-tac-toe.git"
   },
   "bugs": {
-    "url": "https://github.com/felixdasgupta/sam-ai/issues"
+    "url": "https://github.com/felixdasgupta/tic-tac-toe/issues"
   },
-  "homepage": "https://github.com/felixdasgupta/sam-ai#readme"
+  "homepage": "https://github.com/felixdasgupta/tic-tac-toe#readme"
 }

@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -28,15 +28,10 @@
 
     <title>Data Viz Concept</title>
 
-    <link href="./assets/css/semantic.min.css" rel="stylesheet">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.18/c3.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.semanticui.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.semanticui.min.css">
     <link href="./assets/css/main.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
@@ -49,7 +44,7 @@
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand page-scroll">
-                Data Viz
+                Tic Tac Toe
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,133 +53,23 @@
 </nav>
 
 <section id="view">
-    <div id="control">
-        <button id="continue" class="ui button active orange">Continue</button>
+    <div class="player"></div>
+    <div class="start center">
+        <h1>TIC TAC TOE</h1>
+        <div id="start_game" class="btn btn-primary">New Game</div>
     </div>
-    <div class="ui sixteen wide column segment clearing centered dv01BOX g1" id="article">
-        <div class="row intro">
-            <h1>Articles</h1>
-        </div>
-        <div id="charts" class="dv01charts ">
-            <div class="ui grid dv01chart">
-                <div class="column">
-                    <div class="ui segment">
-                        <div id="chart1"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="ui two column grid dv01chart">
-                <div class="column">
-                    <div class="ui segment">
-                        <div id="chart2"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="ui segment">
-                        <div id="chart3"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="tables" class="dv01tables"></div>
-    </div>
-
-    <div class="ui sixteen wide column segment clearing centered dv01BOX g1" id="SAM">
-        <div class="row intro">
-            <h1>S.A.M.</h1>
-        </div>
-        <div id="charts" class="dv01charts ">
-            <div class="ui grid dv01chart">
-                <div class="column">
-                    <div class="ui segment">
-                        <form class="ui form">
-                          <div class="field">
-                            <label>Please Input a Headline</label>
-                            <input type="text" name="headline" placeholder="Input A Headline">
-                          </div>
-                          <div class="field">
-                            <div class="ui toggle checkbox">
-                              <input type="checkbox" name="gift" tabindex="0" class="checked">
-                              <label>Include Negation Detection</label>
-                            </div>
-                            <div class="ui toggle checkbox">
-                              <input type="checkbox" name="gift" tabindex="0" class="checked">
-                              <label>Score WSJ Entities</label>
-                            </div>
-                          </div>
-                        </form>
-                        <button class="ui primary button" id="generate">Generate</button>
-                    </div>
-                </div>
-            </div>
-            <div id="ABTesting" class="ui dv01chart">
-                <div class="row ab">
-                    <div class="ui segment">
-                        <div id="groupA">
-                            <div class="row intro">
-                                <h1>User Group A: Conservative Retiree</h1>
-                            </div>
-                            <div class="row perc">
-                                <span class="ASpan">60%</span> HRR
-                            </div>
-                            <div class="row">
-                                <h5>S.A.M.'s Suggestions</h5>
-                                <ul>
-                                    <div clas="item">+5% - Include An <span class="ui blue horizontal label">Active</span> Verb</div>
-                                    <div clas="item">+5% - Mention Low Costs</div>
-                                    <div clas="item">+2.5% - Leverage Travel-Specific Language (destination)</div>
-                                </ul>
-                            </div>
-                            <div class="row EX">
-                                <p>Examples:</p>
-                                <h4><span class="ui blue horizontal label big">Join</span> WSJ+ in Barbados.</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row ab">
-                    <div class="ui segment">
-                        <div id="groupB">
-                            <div class="row intro">
-                                <h1>User Group B: Social Media Maven</h1>
-                            </div>
-                            <div class="row perc">
-                                <span class="BSpan">43%</span> HRR
-                            </div>
-                            <div class="row">
-                                <h5>S.A.M.'s Suggestions</h5>
-                                <ul class="ui list">
-                                    <div clas="item">+8% - Engage User with a <span class="ui green horizontal label">Question</span></div>
-                                    <div clas="item">+5% - Personalize Headline <span class="ui orange horizontal label">Use Pronouns</span></div>
-                                    <div clas="item">+5% - Mention photogenices</div>
-                                    <div clas="item">+2.5% - Leverage Travel-Specific Language (destination)</div>
-                                </ul>
-                            </div>
-                            <div class="row EX">
-                                <p>Examples:</p>
-                                <h4><span class="ui orange horizontal label big">Have you</span> ever been to Barbados<span class="ui green horizontal label big">?</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="game center"></div>
 </section>
 
 
 <!-- jQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Bootstrap Core JavaScript -->
-<script src="./assets/js/semantic.js"></script>
-<script src="./assets/js/tablesort.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script src="https://d3js.org/d3.v3.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.18/c3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.16/js/dataTables.semanticui.min.js"></script>
 <script src="./src/js/main.min.js"></script>
 
 </body>
